@@ -38,6 +38,7 @@
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
     }
     h2 {
       color: #4a90e2;
@@ -46,6 +47,24 @@
     p {
       line-height: 1.6;
       font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto 1.5rem auto;
+    }
+    .apply-button {
+      background: #4a90e2;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .apply-button:hover {
+      background-color: #357ABD;
     }
     footer {
       text-align: center;
@@ -72,39 +91,11 @@
         and much more. Our campus is home to a diverse population of bears dedicated to learning
         and growth.
       </p>
-    </section>
-
-    <section style="margin-top:2rem;">
-      <h2>Apply Now</h2>
-      <form id="applyForm">
-        <label>
-          Name:<br />
-          <input type="text" name="name" required placeholder="Your full name" style="width:100%; padding:0.5rem; margin-bottom:1rem;" />
-        </label>
-        <label>
-          Email:<br />
-          <input type="email" name="email" required placeholder="Your email" style="width:100%; padding:0.5rem; margin-bottom:1rem;" />
-        </label>
-        <label>
-          Why do you want to join?<br />
-          <textarea name="message" required placeholder="Tell us why..." rows="5" style="width:100%; padding:0.5rem; margin-bottom:1rem;"></textarea>
-        </label>
-        <button type="submit" style="background:#4a90e2; color:white; border:none; padding:0.75rem 1.5rem; font-size:1rem; border-radius:4px; cursor:pointer;">
-          Apply
-        </button>
-      </form>
+      <a href="apply.html" class="apply-button">Apply Now</a>
     </section>
   </main>
   <footer>
     &copy; 2025 Danilabs National Bear College. All rights reserved.
   </footer>
-
-  <script>
-    document.getElementById('applyForm').onsubmit = async (e) => {
-      e.preventDefault();
-      alert('Thank you for applying to Danilabs National Bear College! We will get back to you soon.');
-      e.target.reset();
-    };
-  </script>
 </body>
 </html>
