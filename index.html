@@ -32,13 +32,13 @@
       max-width: 900px;
       margin: 2rem auto;
       padding: 0 1rem;
+      text-align: center;
     }
     section {
       background: white;
       padding: 2rem;
       border-radius: 8px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
     }
     h2 {
       color: #4a90e2;
@@ -66,6 +66,21 @@
     .apply-button:hover {
       background-color: #357ABD;
     }
+    .secret-button {
+      background: #888;
+      color: white;
+      padding: 0.6rem 1.4rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 2rem;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+    }
+    .secret-button:hover {
+      background-color: #555;
+    }
     footer {
       text-align: center;
       padding: 1rem;
@@ -91,7 +106,12 @@
         and much more. Our campus is home to a diverse population of bears dedicated to learning
         and growth.
       </p>
+
       <a href="apply.html" class="apply-button">Apply Now</a>
+      
+      <br />
+
+      <a href="secret.html" class="secret-button" title="Только для своих">Секретная страница</a>
     </section>
   </main>
   <footer>
